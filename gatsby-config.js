@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://info.aretanet.com`,
-    title: `Aretanet Blog`,
+    siteUrl: `https://blog.syukrieseo.com`,
+    title: `Syukrieseo`,
     description: `Aretanet Blog Berbagi Tip dan Trik Bisnis, IT dan Wirausaha.`,
     author: `@syukrie77`,
   },
@@ -21,7 +21,8 @@ module.exports = {
          * Example : 'https://www.example-site.com/graphql'
          */
         //url: `http://localhost/wordpress-cms/graphql`,
-        url: `https://wordpress.aretanet.com/graphql`,
+        //url: `https://wordpress.aretanet.com/graphql`,
+        url: `https://syukrieseo.aretanet.com/blog/graphql`,
       },
     },
     // highlight-end
