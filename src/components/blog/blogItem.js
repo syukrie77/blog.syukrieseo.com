@@ -12,7 +12,7 @@ const BlogItem = ({ alt, image, slug, title}) => {
                     <img
                         src={gatsbyImage.images.fallback.src}
                         alt={alt}
-                        className="max-h-[400px] rounded-lg"
+                        className="w-full h-full object-cover rounded-lg" // Menggunakan object-cover untuk memastikan gambar menutupi area dengan ukuran yang diberikan
                     />
                 )}
                 <h3 className="font-semibold text-black max-w-4/5 text-center mt-2 capitalize sm:text-base text-sm">{title}</h3>

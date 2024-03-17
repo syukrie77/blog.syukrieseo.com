@@ -14,7 +14,7 @@ const Layout = ({children}) => {
   text-sm
   `
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <nav className="flex sm:justify-between justify-around items-center bg-slate-900 lg:px-20 sm:px-6 py-8 text-gray-100">
         <h3 className={logoStyle}>SYUKRIE SEO</h3>
         <ul className="flex space-x-4">
@@ -24,7 +24,7 @@ const Layout = ({children}) => {
         </ul>
       </nav>
 
-      <main>{children}</main>
+      <main className="flex-grow">{children}</main>
       
       <footer className="bg-slate-900 text-gray-100 py-8 text-center mt-8">
       <p>Copyright 2024 <span className={logoStyle}>SYUKRIE SEO</span></p>

@@ -16,7 +16,12 @@ const Blog = () => {
               node {
                 localFile {
                   childImageSharp {
-                    gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
+                    gatsbyImageData(
+                      layout: CONSTRAINED
+                      placeholder: BLURRED
+                      aspectRatio: 1.5
+                      formats: [AUTO, WEBP]
+                    )
                   }
                 }
               }
@@ -29,7 +34,7 @@ const Blog = () => {
     const allArticles = articles.allWpPost.nodes.map((item) => (
         <BlogItem
             key={item.id}
-            image={getImage(item.featuredImage?.node?.localFile ? getImage(item.featuredImage.node.localFile) : '')}
+            image={getImage(item.featuredImage?.node?.localFile)}
             slug={item.slug}
             alt={item.title}
             title={item.title}
