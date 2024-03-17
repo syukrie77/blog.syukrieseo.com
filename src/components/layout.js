@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { FaExternalLinkAlt } from "react-icons/fa" // Import icon yang akan digunakan
 
 const Layout = ({children}) => {
   const linkStyle = `
@@ -28,6 +29,11 @@ const Layout = ({children}) => {
       
       <footer className="bg-slate-900 text-gray-100 py-8 text-center mt-8">
       <p>Copyright 2024 <span className={logoStyle}>SYUKRIE SEO</span></p>
+      {/* Tambahkan tautan ke blog utama */}
+      <a href="https://syukrieseo.com" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center mt-4">
+          Kunjungi Blog Utama
+          <FaExternalLinkAlt className="ml-2" />
+        </a>
       </footer>
     </div>
   )
