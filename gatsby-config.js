@@ -21,8 +21,8 @@ module.exports = {
          * Example : 'https://www.example-site.com/graphql'
          */
         //url: `http://localhost/wordpress-cms/graphql`,
-        //url: `https://wordpress.aretanet.com/graphql`,
-        url: `https://syukrieseo.aretanet.com/blog/graphql`,
+        url: `https://wordpress.aretanet.com/graphql`,
+        //url: `https://syukrieseo.aretanet.com/blog/graphql`,
       },
     },
     // highlight-end
